@@ -8,16 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
     /************************************************************
-    |*En esta clase se definen los botones de la clase principal*
-    |*Adicionalmente esta clase es el "Lanzador" de la app      *
+     *En esta clase se definen los botones de la clase principal*
+     *Adicionalmente esta clase es el "Lanzador" de la app      *
      *                                                          *
      * button5 -> Dilatacion Lineal                             *
      * button6 -> Dilatacion Superficial                        *
      * button7 -> Dilatacion Volumetrica                        *
+     *lol                                                       *
      ************************************************************/
-
 
     private Button lineal, superficial, volumetrica;
     protected void onCreate(Bundle savedInstanceState) {

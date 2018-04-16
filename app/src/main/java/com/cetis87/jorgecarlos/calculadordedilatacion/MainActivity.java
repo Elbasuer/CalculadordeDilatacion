@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
      * button5 -> Dilatacion Lineal                             *
      * button6 -> Dilatacion Superficial                        *
      * button7 -> Dilatacion Volumetrica                        *
-     *lol                                                       *
+     *                                                       *
      ************************************************************/
 
     private Button lineal, superficial, volumetrica;

@@ -8,6 +8,16 @@ import android.widget.Button;
 
 public class DilatacionLineal extends AppCompatActivity {
 
+    /************************************************************
+     * En esta pantalla se presentan las posibles incognitas de *
+     * la formula de dilatacion lineal                          *
+     *                                                          *
+     * button4 -> Coeficiente                                   *
+     * button8 -> Longitud inicial                              *
+     * button9 -> Longitud final                                *
+     * button13 -> Temperatura inicial                          *
+     * button14 -> Temperatura final                            *
+     ************************************************************/
 
     private Button coeficiente, lo, lf, to, tf;
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +28,7 @@ public class DilatacionLineal extends AppCompatActivity {
         coeficiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent coeficiente = new Intent(getApplicationContext(), CoeficienteL.class);
+                Intent coeficiente = new Intent(getApplicationContext(), Coeficiente.class);
                 coeficiente.putExtra("tipo", "lineal");
                 startActivity(coeficiente);
             }

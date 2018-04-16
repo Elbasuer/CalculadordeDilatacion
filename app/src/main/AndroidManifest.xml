@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DilatacionLineal" />
-        <activity android:name=".CoeficienteL"></activity>
+        <activity android:name=".Coeficiente" />
+        <activity android:name=".LongitudInicial"></activity>
     </application>
 
 </manifest>

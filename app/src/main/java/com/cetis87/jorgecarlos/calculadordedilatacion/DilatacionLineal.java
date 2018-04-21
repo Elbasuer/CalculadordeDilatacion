@@ -24,12 +24,17 @@ public class DilatacionLineal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dilatacion_lineal);
 
+        Intent Lineal = getIntent();
+        Bundle bundle = Lineal.getExtras();
+        final String tipo = bundle.getString("tipo");
+
+
         coeficiente = (Button)findViewById(R.id.button4);
         coeficiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent coeficiente = new Intent(getApplicationContext(), Coeficiente.class);
-                coeficiente.putExtra("tipo", "lineal");
+                coeficiente.putExtra("tipo", tipo);
                 startActivity(coeficiente);
             }
         });

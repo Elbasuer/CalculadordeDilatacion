@@ -28,7 +28,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent Lineal = new Intent(getApplicationContext(), DilatacionLineal.class);
+                Lineal.putExtra("tipo", "lineal");
                 startActivity(Lineal);
+            }
+        });
+
+        superficial = (Button)findViewById(R.id.button6);
+        superficial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Superficial = new Intent(getApplicationContext(), DilatacionLineal.class);
+                Superficial.putExtra("tipo", "superficial");
+                startActivity(Superficial);
+            }
+        });
+
+        volumetrica = (Button)findViewById(R.id.button7);
+        volumetrica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Volumetrica = new Intent(getApplicationContext(), DilatacionLineal.class);
+                Volumetrica.putExtra("tipo", "volumetrica");
+                startActivity(Volumetrica);
             }
         });
 
